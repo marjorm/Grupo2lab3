@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --fondo: #f4f6fb;
+    --texto: #20263a;
+    --suave: #68718a;
+    --primario: #38396E;
+    --primario-oscuro: #392da8;
+    --borde: #e0e5f0;
+    --fila: #f7f8ff;
+}
+
+body {
+    margin: 0;
+    color: var(--texto);
+    background: var(--fondo);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 1.5rem 3.4rem;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(120deg, #25204f, #5546d7 62%, #8c78f5);
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: -115px;
+    right: 8%;
+    border: 35px solid rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: -0.04em;
+}
+
+header p {
+    position: relative;
+    z-index: 1;
+    max-width: 620px;
+    margin: 0.65rem auto 0;
+    color: #e8e5ff;
+}
+
+main {
+    width: min(100% - 2rem, 1000px);
+    margin: -1.5rem auto 2rem;
+    position: relative;
+}
+
+.card {
+    padding: clamp(1.2rem, 3vw, 2rem);
+    background: #fff;
+    border: 1px solid rgba(224, 229, 240, 0.9);
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(36, 35, 83, 0.10);
+}
+
+.card h2 {
+    margin: 0 0 0.45rem;
+    color: var(--primario-oscuro);
+    font-size: 1.45rem;
+}
+
+
+#tabla-personas {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    min-width: 420px;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    padding: 0.95rem 1.1rem;
+    border-bottom: 1px solid var(--borde);
+    text-align: left;
+}
+
+th {
+    color: #fff;
+    background: var(--primario);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--fila);
+}
+
+tbody tr:hover {
+    background: #eeecff;
+}
+
+tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+td {
+    color: #343b52;
+}
+
+footer {
+    padding: 0 1rem 1.5rem;
+    color: var(--suave);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 2.5rem 1rem 3rem;
+    }
+
+    main {
+        width: min(100% - 1rem, 1000px);
+    }
+
+    .card {
+        padding: 1rem;
+        border-radius: 14px;
+    }
+
+    th,
+    td {
+        padding: 0.75rem;
+    }
+}
