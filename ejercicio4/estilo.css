@@ -1,0 +1,48 @@
+
+body {
+    margin: 8px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #000;
+    background: #fff;
+}
+fieldset {
+    margin: 0 4px;
+    padding: 8px 12px 12px;
+    border: 2px groove #eee;
+}
+legend {
+    padding: 0 2px;
+}
+ul {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-left: 28px;
+}
+li {
+    padding: 0;
+    margin: 0;
+}
+input {
+    width: 140px;
+    height: 15px;
+    padding: 1px 2px;
+    box-sizing: content-box;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+button {
+    margin: 0;
+    padding: 1px 6px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: normal;
+}
+#salida {
+    margin-top: 10px;
+    padding: 0 6px 10px;
+    min-height: 36px;
+}
+#salida p {
+    margin: 1em 0;
+}

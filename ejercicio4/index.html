@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - localStorage</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="datos.js" defer></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <ul>
+            <li>Nombre: <input type="text" id="nombre" placeholder="Su nombre"></li>
+            <li>Edad: <input type="number" id="edad" placeholder="Su edad" min="0" max="120"></li>
+            <li>
+                <button type="button" id="anadir">Añadir</button>
+                <button type="button" id="obtener">Obtener</button>
+                <button type="button" id="remover">Remover</button>
+                <button type="button" id="limpiar">Limpiar</button>
+            </li>
+            <li>
+                <button type="button" id="guardar-complejo">Guardar dato complejo</button>
+                <button type="button" id="restaurar-complejo">Restaurar dato complejo</button>
+                <button type="button" id="guardar-arreglo">Guardar arreglo</button>
+                <button type="button" id="restaurar-arreglo">Restaurar arreglo</button>
+            </li>
+        </ul>
+    </fieldset>
+    <div id="salida" aria-live="polite">
+        <p>Datos guardados en el localStorage.</p>
+    </div>
+</body>
+</html>
